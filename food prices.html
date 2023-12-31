@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Food Prices</title>
+      <style >  .footer_section {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: 10px;
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+      text-align: right;
+      padding-right: 30px;
+      margin-right: -10px; /* Adjust the space between columns */
+    }
+
+    .column:last-child {
+      margin-left: -10px;
+    }
+
+    .column p {
+      font-size: 16px; /* Adjust the font size as needed */
+    }
+
+    .column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .column li {
+      margin-bottom: 10px;
+    }
+
+    .column a {
+      text-decoration: none;
+      color: white;
+    }</style>
+      <link rel="icon" type="image/png" href="images/sure.png">
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   </head>
+   <body>
+      <div class="header_section header_bg">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand"href="#">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="food prices.html">Food Menu</a>
+                     </li>
+                     
+                     <li class="nav-item">
+                        <a class="nav-link" href="cafe menu.html">Catalog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                     </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="gallery1.html">Gallery</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="star.html">Reviews</a>
+                     </li>
+                  </ul>
+                  <div class="search-container">
+    <input type="text" class="search-box" placeholder="Search...">
+    <button class="search-button">Search</button>
+               </div>
+               </div>
+            </nav>
+         </div>
+         <img src="images/BILAO1.png" class="bilao">
+          <img src="images/BILAO1.png" class="bila">
+          <h3 class="about_taital" style="margin-top: 70px">"Savor Every Bite"</h3>
+
+
+      </div>
+      <!-- header section end -->
+      <!-- coffee section start -->
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+             <!-- BURGER MENU -->
+               <h1 class="coffee_taital">BURGER MENU</h1>
+               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/king's burger.jpg"></div>
+                              <h3 class="types_text">KING'S BURGER<br> Php 399</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                               <div class="button-container">
+        <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+        <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+    </div>
+                              
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/black mamba burger.jpg"></div>
+                              <h3 class="types_text">BLACK MAMBA BURGER <br> Php 180</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <div class="products-rating"><i></i> </div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/golden state burger.jpg"></div>
+                              <h3 class="types_text">GOLDEN STATE BURGER <br> Php 175</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                 <button onclick="addToCart('Product 2', 15)"> Buy Now</button>  
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/chicken fillet burger.jpg"></div>
+                              <h3 class="types_text">CHICKEN FILLET BURGER<br> Php 175</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="v">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/king's burger.jpg"></div>
+                              <h3 class="types_text">KING'S BURGER<br> Php 399</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/black mamba burger.jpg"></div>
+                              <h3 class="types_text">BLACK MAMBA BURGER <br> Php 180</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/golden state burger.jpg"></div>
+                              <h3 class="types_text">GOLDEN STATE BURGER <br> Php 175</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/chicken fillet burger.jpg"></div>
+                              <h3 class="types_text">CHICKEN FILLET BURGER<br> Php 175</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div> 
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <!-- ALL DAY BREAKFAST -->
+               <h1 class="coffee_taital">ALL DAY BREAKFAST</h1>
+               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider1" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/beef tapa.jpg"></div>
+                              <h3 class="types_text">BEFF TAPA<br> Php 135</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/tocino.jpg"></div>
+                              <h3 class="types_text">TOCINO <br> Php 125</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/hungarian sausage.jpg"></div>
+                              <h3 class="types_text">HUNGARIAN SAUSAGE<br> Php 115</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/longanisa.jpg"></div>
+                              <h3 class="types_text">LONGGANISA <br> Php 115</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/burger steak.jpg"></div>
+                              <h3 class="types_text">BURGER STEAK <br> Php 99</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider1" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider1" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <!-- PASTA MENU -->
+               <h1 class="coffee_taital">PASTA MENU</h1>
+               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider2" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/carbonara with chicken.jpg"></div>
+                              <h3 class="types_text">CARBONARA WITH CHICKEN <br> Php 179</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/pesto with chicken.jpg"></div>
+                              <h3 class="types_text">PESTO WITH CHICKEN <br> Php 169</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/spaghetti with chicken.jpg"></div>
+                              <h3 class="types_text">SPAGHETTI WITH CHICKEN <br> Php 165</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/chami with chiken fillet.jpg"></div>
+                              <h3 class="types_text">CHAMI WITH CHICKEN FILLET <br> Php 155</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/carbonara with chicken.jpg"></div>
+                              <h3 class="types_text">CARBONARA WITH CHICKEN <br> Php 179</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/pesto with chicken.jpg"></div>
+                              <h3 class="types_text">PESTO WITH CHICKEN <br> Php 169</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/spaghetti with chicken.jpg"></div>
+                              <h3 class="types_text">SPAGHETTI WITH CHICKEN <br> Php 165</h3>
+                               <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/chami with chiken fillet.jpg"></div>
+                              <h3 class="types_text">CHAMI WITH CHICKEN FILLET <br> Php 155</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider2" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider2" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <!-- CHICKEN MENU -->
+               <h1 class="coffee_taital">CHICKEN MENU</h1>
+               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider3" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/chicken with gravy.jpg"></div>
+                              <h3 class="types_text"> 1pc CHICKEN WITH GRAVY <br> Php 119</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/chicken with sauce.jpg"></div>
+                              <h3 class="types_text">4pcs CHICKEN WINGS <br> Php 179</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/chicken with sauce.jpg"></div>
+                              <h3 class="types_text">6pcs 4pcs CHICKEN WINGS <br> Php 209 </h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/spanish style fried chicken.jpg"></div>
+                              <h3 class="types_text">SPANISH STYLE FRY HALF CHICKEN<br> Php 269</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/spanish style fried chicken.jpg"></div>
+                              <h3 class="types_text">SPANISH STYLE FRY WHOLECHICKEN <br> Php 369</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider3" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider3" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <!-- SNACKS -->
+               <h1 class="coffee_taital">SNACKS</h1>
+               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider4" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/tapawarma.jpg"></div>
+                              <h3 class="types_text">TAPAWARMA <br> Php 99</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/premium fries.jpg"></div>
+                              <h3 class="types_text">PREMIUM FRIES <br> Php 70</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/mojos.jpg"></div>
+                              <h3 class="types_text">MOJOS <br> Php 140</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/pancake.jpg"></div>
+                              <h3 class="types_text">PANCAKE <br> Php 70</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/churos.jpg"></div>
+                              <h3 class="types_text">CHUROS <br> Php 70</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <
+               </div>
+               <a class="carousel-control-prev" href="#main_slider4" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider4" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <!-- FRUIT JUICES -->
+               <h1 class="coffee_taital">FRUIT JUICES/FRAPPE</h1>
+               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider5" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/fruit juice2.jpg"></div>
+                              <h3 class="types_text">GREEN APPLE <br> Php 89</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/fruit juice2.jpg"></div>
+                              <h3 class="types_text">STRAWBERRY <br> Php 89</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/fruit juice2.jpg"></div>
+                              <h3 class="types_text">LEMONADE <br> Php 89</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/fruit juice2.jpg"></div>
+                              <h3 class="types_text">BLUE LEMONADE <br> Php 89</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/milk choco.jpg"></div>
+                              <h3 class="types_text">MILK CHOCOLATE <br> Php 125</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/cappuccino.jpg"></div>
+                              <h3 class="types_text">CAPPUCCINO <br> Php 125</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/caramel macchiato.jpg" style="width:400px; height:326px;"></div>
+                              <h3 class="types_text">CARAMEL MACCHIATO <br> Php 125</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/frappe.jpg"></div>
+                              <h3 class="types_text">CHOCOLATE <br> Php 125</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider5" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider5" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <!-- SHAKES -->
+               <h1 class="coffee_taital">SHAKES</h1>
+               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider6" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/mango graham shake.jpg"></div>
+                              <h3 class="types_text">MANGO GRAHAM SHAKE<br> Php 99</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/oreo and chocolate shake.jpg"></div>
+                              <h3 class="types_text">OREO AND CHOCOCLATE SHAKE.JPG<br> Php 99</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/mais con yelo.jpg"></div>
+                              <h3 class="types_text">MAIS CON YELO <br> Php 89</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/shakes menu.jpg"></div>
+                              <h3 class="types_text">SWEET CORN <br> Php 99</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  
+
+
+
+
+
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/shakes menu.jpg"></div>
+                              <h3 class="types_text">STRAWBERRY SHAKE <br> Php 99</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider6" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider6" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <!-- BUBLE MILKTEA -->
+               <h1 class="coffee_taital">BUBBLE MILKTEA</h1>
+               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider7" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/dark chocolate.jpg"></div>
+                              <h3 class="types_text">DARK CHOCOLATE <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/dark chocolate.jpg"></div>
+                              <h3 class="types_text">OKINAWA <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/dark chocolate.jpg"></div>
+                              <h3 class="types_text">TARO <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/dark chocolate.jpg"></div>
+                              <h3 class="types_text">MANGO CHEESE CAKE <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/dark chocolate.jpg"></div>
+                              <h3 class="types_text">COOKIES AND CREAM <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/winter melon.jpg" style="height: 326px;"></div>
+                              <h3 class="types_text">WINTER MELON <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/redvet.jpg" style="height:326px;"></div>
+                              <h3 class="types_text">RED VELVET <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/blackforest.jpg"></div>
+                              <h3 class="types_text">BLACK FOREST <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                 <!-- COPY -->
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/thai milktea.jpg"></div>
+                              <h3 class="types_text">THAI MILKTEA <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/macha.jpg"></div>
+                              <h3 class="types_text">MACHA <br> Medium-Php 100<br> Large-Php 125</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                           <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/redvet.jpg" style="height:326px;"></div>
+                              <h3 class="types_text">HOKKAIDO <br> Medium-Php 100<br> Large-Php 125</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/strawberry.jpg"style="height:326px;"></div>
+                              <h3 class="types_text">STRAWBERRY<br> Medium-Php 100<br> Large-Php 125</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/winter melon.jpg"style="height:326px;"></div>
+                              <h3 class="types_text">HAZEL NUT<br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/blackforest.jpg"></div>
+                              <h3 class="types_text">DALGONA COFFEE <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                             <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/redvet.jpg"style="height:326px;"></div>
+                              <h3 class="types_text">CHOCOLATE <br> Medium-Php 80<br> Large-Php 95</h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/okinawa.jpg"></div>
+                              <h3 class="types_text">CARAMEL SUGAR <br> Medium-Php 80<br> Large-Php 95 </h3>
+                              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                              <button onclick="addToCart('Product 2', 15)"> Buy Now</button>
+                              <div class="read_bt"><a href="cafe menu.html">Description</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <a class="carousel-control-prev" href="#main_slider7" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider7" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+     
+
+
+
+       
+      
+
+
+
+      <!-- coffee section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+    <div class="footer">
+     
+      <div class="column">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="food prices.html">Food Menu</a></li>
+          <li><a href="#">Catalog</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery1.html">Gallery</a></li>
+          <li><a href="star.html">Reviews</a></li>
+          <li><a href="term of use.html">Terms of Use</a></li>
+        </ul>
+      </div>
+       <div class="column">
+        <ul>
+          <li><a href="#">Barangay Tabi, Boac Marinduque<br> Barangay Malusak, Boac Marinduque </a></li>
+          <li><a href="#">0977 633 7692</a></li>
+          <li><a href="#">cindyscafe@gmail.com</a></li>
+           <div class="form-group">
+                     <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
+                     <div class="subscribe_bt"><a href="#"><img src="images/teligram-icon.png"></a></div>
+                  </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+      <!-- footer section end -->
+     
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
